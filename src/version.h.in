@@ -1,0 +1,6 @@
+#ifndef PFAR_VERSION_H
+#define PFAR_VERSION_H
+
+#cmakedefine CMAKE_PROJECT_VERSION "@CMAKE_PROJECT_VERSION@"
+
+#endif
