@@ -5,7 +5,7 @@
 #include <filesystem>
 #include <boost/algorithm/string.hpp>
 #include <boost/program_options.hpp>
-#include "../include/PagedFile.h"
+#include <pagedfile/PagedFile.h>
 #include "version.h"
 
 using namespace pagedfile;

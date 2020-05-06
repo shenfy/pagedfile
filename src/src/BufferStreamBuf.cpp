@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "../include/BufferStreamBuf.h"
+#include <pagedfile/BufferStreamBuf.h>
 
 namespace pagedfile {
 

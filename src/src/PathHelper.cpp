@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "../include/PathHelper.h"
+#include <pagedfile/PathHelper.h>
 #include <sstream>
 #include <fstream>
 #include <boost/algorithm/string.hpp>

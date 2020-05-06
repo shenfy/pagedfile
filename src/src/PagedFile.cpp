@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "../include/PagedFile.h"
+#include <pagedfile/PagedFile.h>
 #include <iostream>
 #include <fstream>
 #include <algorithm>
