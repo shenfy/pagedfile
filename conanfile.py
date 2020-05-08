@@ -12,8 +12,8 @@ class PagedfileConan(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
     requires = "lz4/1.9.2", "boost/1.69.0"
     options = {"shared": [False]}
-    default_options = {"shared": False}
-    generators = "cmake_paths"
+    default_options = {"shared": False, "boost:shared": True}
+    generators = "cmake_paths", "cmake_find_package"
     exports_sources = "src/*"
 
     def build(self):
