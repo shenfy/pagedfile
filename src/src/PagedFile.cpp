@@ -459,11 +459,6 @@ uint64_t PagedFile::ReadPage(uint32_t idx, char *buffer, size_t buffer_size) {
           return 0;
         }
 
-        if (hint == 0) {
-          // decompressing is done. src_left should equal src_size.
-          break;
-        }
-
         buffer += dst_size;
         dst_consumed += dst_size;
         src_buffer += src_size;
