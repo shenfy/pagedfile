@@ -230,7 +230,10 @@ public:
         if (max_size > input_buffer.size()) {
           input_buffer.resize(max_size);
         }
-        pf.ReadPage(idx, &input_buffer[0], max_size);
+        if (!pf.ReadPage(idx, &input_buffer[0], max_size)) {
+          std::cerr << "Error: failed to read page " << output_path.string() << std::endl;
+          continue;
+        }
         output_length = uncompressed_length;
       } else {
         if (page_length > input_buffer.size()) {
