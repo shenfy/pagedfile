@@ -447,7 +447,7 @@ uint64_t PagedFile::ReadPage(uint32_t idx, char *buffer, size_t buffer_size) {
 
       // loop until src buffer is exhausted or frame end
       size_t dst_consumed = 0;
-      size_t src_left = comp_buffer_.size();
+      size_t src_left = desc->length;
       char *src_buffer = comp_buffer_.data();
       while (src_left > 0) {
         size_t dst_size = buffer_size - dst_consumed;
