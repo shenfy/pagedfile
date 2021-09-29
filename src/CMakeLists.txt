@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.17)
-project(pfar VERSION 1.3.0 LANGUAGES CXX)
+project(pfar VERSION 1.3.2 LANGUAGES CXX)
 
 if (EXISTS ${CMAKE_BINARY_DIR}/conan_paths.cmake)
   include(${CMAKE_BINARY_DIR}/conan_paths.cmake)
